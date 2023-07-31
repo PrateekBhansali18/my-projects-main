@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+        type="text/css" media="screen">
+
+    <link rel="stylesheet" href="./app/css/test2.css">
+
+    <script
+        src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js"></script>
+
+    <script>
+        window.console = window.console || function (t) { };
+    </script>
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="outercontainer">
+        <div class="dashboard">
+            <img src="app/images/logo.png" alt="" class="logo_img">
+            <a class="dashboard_option" href="#">Previously Booked Class</a>
+            <a class="dashboard_option" href="#">Upcoming Class</a>
+            <a class="dashboard_option" href="#">Test Series</a>
+            <a class="dashboard_option" href="#">Upcoming Test</a>
+        </div>
+        <div class="right_column">
+            <div class="upper_dashboard">
+                <div class="navigate">
+                    <div class="nav_arrow_div"><a class="nav_arrow" href="#"> < </a>
+                    </div>
+                    <div class="nav_arrow_div"><a class="nav_arrow" href="#"> > </a> </div>
+                </div>
+                <div class="nav_profile">
+                    <div class="nav_profile_image"><img src="app/images/Photo place Holder.png" alt=""
+                            class="profile_image"></div>
+                    <div class="nav_profile_text">
+                        <div class="profile_studentname">Student Name</div>
+                        <div class="edit_logout" href="#"><a href="#" class="edit">Edit Profile </a>| <a href="#" class="logout">Log Out</a></div>
+                    </div>
+                    <a href="#" class="bell">
+                        <i class="fa fa-bell "></i>
+                    </a>
+                </div>
+
+            </div>
+            <div class="test_stats">
+                <div class="mockresult">
+                    <div class="test_name">Test Name</div>
+                    <div class="score_rank_time">
+                        <div class="total_score">
+                            <div class="total_score_heading">Total Score</div>
+                            <div class="total_score_box">80</div>
+                        </div>
+                        <div class="total_score">
+                            <div class="total_score_heading">All India Rank</div>
+                            <div class="total_score_box">135</div>
+                        </div>
+                        <div class="total_score">
+                            <div class="total_score_heading">Total Spent Time</div>
+                            <div class="total_score_box total_spent_time_box">
+                                <div class="spent_time"></div>75
+                                <div class="min">min</div>
+                            </div>
+                        </div>
+                        <div class="total_score correct_questions" id="no_of_incorrect_question">
+                            <div class="total_score_heading" >No. of Correct Questions</div>
+                            <div class="total_score_box" >50</div>
+                        </div>
+                        <div class="total_score">
+                            <div class="total_score_heading incorrect_questions">No. of Incorrect Questions</div>
+                            <div class="total_score_box">5</div>
+                        </div>
+                    </div>
+                    <div class="about_get">
+                        <button class="about_topics">
+                            <a href="#" class="about_topics_link">About Topics</a>
+                        </button>
+                        <button class="about_topics">
+                            <a href="#" class="about_topics_link">Get Solution</a>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="timespent">
+                    <div class="student">
+                        <div class="student_ranker">
+                            <div class="studentName">
+                                Student Name
+                            </div>
+                            <div class="firstranker">#1st ranker</div>
+                        </div>
+                        <div class="img_profile">
+                            <div class="studentImage">
+                                <img src="app/images/Photo place Holder.png" alt="">
+                            </div>
+                            <a class="viewprofile" href="#">View Profile</a>
+                        </div>
+
+                    </div>
+                    <div class="container">
+                        <div>
+                            <canvas id="myChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app/js/know_your_result.js"></script>
+    <script id="rendered-js">
+        var ctx = document.getElementById("myChart").getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ["Physics", "Maths", "Chemistry", "Bio", "Subject Name"],
+                datasets: [{
+                    backgroundColor: [
+                        "rgb(0,106,120)",
+                        "rgb(0,167,181)",
+                        "rgb(140,216,221)",
+                        "rgb(177,221,225)",
+                        "rgb(233,248,248)"
+                    ],
+                    data: [30, 41, 9, 15, 5],
+                    borderWidth: [0, 0, 0, 0, 0]
+                }]
+            }
+        });
+    </script>
+</body>

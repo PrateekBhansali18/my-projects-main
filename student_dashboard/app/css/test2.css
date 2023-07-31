@@ -1,0 +1,452 @@
+body,html{
+    font-family: 'Poppins';
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+.outercontainer{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.dashboard{
+    flex:1;
+    background-color: rgb(0,167,181);
+    display: flex;
+    flex-direction: column;
+}
+.logo_img{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    width: 50%;
+}
+.dashboard_option{
+    color: white;
+    font-weight: bold;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 20%;
+    text-decoration: none;
+}
+
+/* .................................................................................................................................. */
+.mockresult{
+    flex: 1.5;
+    display: flex;
+    flex-direction: column;
+}
+.score_rank_time{
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    width: 100%;
+    flex-wrap: wrap;
+    
+    margin-left: 20px;
+}
+.total_score{
+    /* flex:1; */
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 34px;
+    margin-left: 10px;
+}
+.total_score_heading{
+    font-size: 17px;
+    font-weight: bold;
+    text-align:center;
+}
+@media only screen and (min-width:1116px){
+    .total_score_box {
+        font-size: 50px;
+    }
+}
+@media only screen and (min-width:870px){
+    .correct_questions{
+        margin-right: 20px;
+    }
+}
+.test_name{
+    color:rgb(0,106,120);  
+    font-size: 45px;
+    font-weight: bold;
+    margin-top:10px;
+    margin-left:15%;
+}
+.total_score_box{
+    background-color: rgb(233,248,248);
+    color:rgb(0,106,120);
+    font-size: 56px;
+    font-weight: bold;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align:center;
+}
+.total_spent_time_box{
+    display: flex;
+    align-items: flex-end; 
+    justify-content: center;
+}
+.min{
+    font-size: 20px;
+    padding-bottom:5px;
+}
+.questions{
+    background-color: rgb(233,248,248);
+    border: none;
+    width: 300px;
+    margin:5px;
+    margin-left:15%;
+    border-radius:15px;
+    padding:10px;
+    padding-left:20px;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+}
+
+.total_no{
+    margin-right:auto;
+    font-size: 15px;
+    font-weight: bold;
+}
+.arrow{
+    margin-left:auto;
+    color: rgb(233,248,248);
+    font-size: 20px;
+    background-color: rgb(0,140,155);
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+}
+.about_get{
+    display: flex;
+    margin-left: 50px;
+}
+.about_topics{
+    background-color:rgb(0,167,181);
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+}
+.about_topics_link{
+    width:100%;
+    color:white;
+    text-decoration:none;
+    font-weight: bold;
+}
+
+/* .................................................................................................................................... */
+.timespent{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+    margin-top: -173px;
+}
+.student{
+    display: flex;
+    align-items: center;
+    height: 93px;
+    width: 275px;
+    border-radius: 20px;
+    color: rgb(0,167,181);
+    box-shadow: 2px 2px 2px 3px rgba(0,0,0,0.2);
+}
+.student_ranker{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+.studentName{
+    font-size: 20px;
+    font-weight: bold;
+}
+.firstranker{
+    font-size: 15px;
+}
+.img_profile{
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+.studentImage{
+    display: flex;
+    flex-direction: column;
+    height: 60px;
+    width: 60px;
+}
+.viewprofile{
+    color: rgb(0,167,181);
+    font-size: 10px;
+    font-weight: bold;
+}
+.test_stats{
+    display: flex;
+    flex: 3;
+    margin-top: 40px;
+}
+.right_column{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+.upper_dashboard{
+    height: 80px;
+    background-color: rgb(233,248,248);
+    display: flex;
+}
+.navigate{
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 30px;
+}
+.nav_arrow_div{
+    background-color: rgb(177,221,225);
+    border-radius: 5px;
+    height: 25px;
+    width: 25px;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav_arrow{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.nav_profile{
+    margin-left: auto;
+    margin-right: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: flex;
+}
+.nav_profile_image{
+    display: flex;
+}
+.profile_image{
+    margin:auto;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+}
+.nav_profile_text{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.profile_studentname{
+    color:rgb(0,106,120);
+    font-size: 13px;
+    font-weight: bold;
+}
+.edit_logout{
+    font-size: 10px;
+    color: rgb(0,140,155);
+    display: flex;
+}
+.edit,.logout{
+    font-size: 10px;
+    color: rgb(0,140,155);
+    text-decoration: none;
+}
+.bell{
+    display: flex;
+    margin: auto;
+    text-decoration: none;
+    color: rgb(0,106,120);
+    margin-left: 25px;
+}
+@media only screen and (max-width:1150px){
+    .total_spent_time_box{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media only screen and (max-width:1116px){
+    .total_score_box {
+        font-size: 47px;
+    }
+    .total_score_heading {
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:1042px){
+    .mockresult{
+        flex:1;
+    }
+    .score_rank_time {
+        margin-left: 5px;
+    }
+    .total_score_box {
+        font-size: 40px;
+    }
+    .total_score_heading {
+        font-size: 13px;
+    }
+    .mockresult{
+        min-width: 56%;
+    }
+}
+@media only screen and (max-width:962px){
+
+    .total_score_box {
+        font-size: 34px;
+    }
+}
+@media only screen and (max-width:962px){
+
+    .total_score_box {
+        font-size: 26px;
+    }
+    .total_score_heading {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:870px){
+    .test_stats{
+        flex-direction: column;
+    }
+    body,.outercontainer{
+        height: fit-content;
+    }
+    .student{
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .container{
+        width: 60%;
+        font-size: 20px;
+    }
+    .mockresult{
+        align-items: center;
+    }
+    .test_name{
+        margin: auto;
+    }
+    .score_rank_time{
+        width: 60%;
+    }
+    .total_score{
+        margin: auto;
+    }
+    .correct_questions{
+        margin-right: -10%;
+    }
+    .incorrect_question{
+        margin-left: -10%;
+    }
+    canvas{
+        margin-top: 0px;
+    }
+    .score_rank_time {
+        margin: auto;
+    }
+    .total_score_heading {
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width:830px){
+    .score_rank_time{
+        width: 59%;
+    }
+}
+@media only screen and (max-width:775px){
+    .score_rank_time{
+        width: 66%;
+    }
+    .total_score_heading {
+        font-size: 9px;
+    }
+}
+@media only screen and (max-width:715px){
+
+    .score_rank_time{
+        width: 75%;
+    }
+    .dashboard{
+        flex: 1.5;
+    }
+}
+@media only screen and (max-width:640px){
+    .score_rank_time{
+        flex-direction: column;
+    }
+    .total_score{
+        width: 80%;
+    }
+    .bell{
+        margin-left:10px;
+    }
+    .container{
+        width: 80%;
+    }
+    .student{
+        transform: scale(.8);
+    }
+   .correct_questions{
+       margin-right: 25px;
+   }
+}
+@media only screen and (max-width:560px){
+    .container{
+        width: fit-content;
+        margin-left: 10px;
+    }
+}
+@media only screen and (max-width:450px){
+    .outercontainer{
+        flex-direction: column;
+    }
+    .logo_img{
+        margin-bottom: 0;
+    }
+    .dashboard_option{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (max-width:300px){
+    .upper_dashboard{
+        flex-direction: column;
+        padding: 25px;
+    }
+    .navigate,.nav_profile{
+        margin: auto;
+    }
+    .dashboard_option{
+        margin-left: 10%;
+    }
+    .student{
+        transform: scale(.6);
+    }
+}
+@media only screen and (max-width:800px){
+    .test_stats{
+        flex-direction: column;
+    }
+}

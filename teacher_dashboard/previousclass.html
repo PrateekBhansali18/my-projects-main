@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app/css/teacher_dashoboard.css">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="app/js/dashboard.js"></script>
+</head>
+
+<body>
+    <div class="popups">
+
+    
+        <div class="popup">
+            <i class="fa fa-times cros2" aria-hidden="true" onclick="cross2()"></i>
+            <div class="popup_image">
+                <img src="https://source.unsplash.com/weekly?sky" alt="student image">
+            </div>
+            <div class="popup_content">
+                <li>
+                    <h1>student name1</h1>
+                </li>
+                <li>
+                    <img src="app/images/Call.png" alt=" call">
+                    +91-1234567891
+                </li>
+                <li>
+                    <img src="app/images/Email.png" alt="email">
+                    dummy@gmail.com
+                </li>
+            </div>
+        </div>
+        <div class="popup">
+            <i class="fa fa-times cros2" aria-hidden="true" onclick="cross2()"></i>
+            <div class="popup_image">
+                <img src="https://source.unsplash.com/weekly?sky" alt="student image">
+            </div>
+            <div class="popup_content">
+                <li>
+                    <h1>student name2</h1></li>
+                <li>
+                    <img src="app/images/Call.png" alt=" call">
+                    +91-1234567891
+                </li>
+                <li>
+                    <img src="app/images/Email.png" alt="email">
+                    dummy@gmail.com
+                </li>
+            </div>
+        </div>
+        <div class="popup">
+            <i class="fa fa-times cros2" aria-hidden="true" onclick="cross2()"></i>
+            <div class="popup_image">
+                <img src="https://source.unsplash.com/weekly?sky" alt="student image">
+            </div>
+            <div class="popup_content">
+                <li>
+                    <h1>student name3</h1></li>
+                <li>
+                    <img src="app/images/Call.png" alt=" call">
+                    +91-1234567891
+                </li>
+                <li>
+                    <img src="app/images/Email.png" alt="email">
+                    dummy@gmail.com
+                </li>
+            </div>
+        </div>
+        <div class="popup">
+            <i class="fa fa-times cros2" aria-hidden="true" onclick="cross2()"></i>
+            <div class="popup_image">
+                <img src="https://source.unsplash.com/weekly?sky" alt="student image">
+            </div>
+            <div class="popup_content">
+                <li>
+                    <h1>student name4</h1></li>
+                <li>
+                    <img src="app/images/Call.png" alt=" call">
+                    +91-1234567891
+                </li>
+                <li>
+                    <img src="app/images/Email.png" alt="email">
+                    dummy@gmail.com
+                </li>
+            </div>
+        </div>
+        <div class="popup">
+            <i class="fa fa-times cros2" aria-hidden="true" onclick="cross2()"></i>
+            <div class="popup_image">
+                <img src="https://source.unsplash.com/weekly?sky" alt="student image">
+            </div>
+            <div class="popup_content">
+                <li>
+                    <h1>student name5</h1></li>
+                <li>
+                    <img src="app/images/Call.png" alt=" call">
+                    +91-1234567891
+                </li>
+                <li>
+                    <img src="app/images/Email.png" alt="email">
+                    dummy@gmail.com
+                </li>
+            </div>
+        </div>
+        <div class="popup">
+            <i class="fa fa-times cros2" aria-hidden="true" onclick="cross2()"></i>
+            <div class="popup_image">
+                <img src="https://source.unsplash.com/weekly?sky" alt="student image">
+            </div>
+            <div class="popup_content">
+                <li>
+                    <h1>student name6</h1></li>
+                <li>
+                    <img src="app/images/Call.png" alt=" call">
+                    +91-1234567891
+                </li>
+                <li>
+                    <img src="app/images/Email.png" alt="email">
+                    dummy@gmail.com
+                </li>
+            </div>
+        </div>
+         </div>
+    <section class="outercontainer">
+        <section class="dashboard">
+            <img src="app/images/Logo.png" alt="logo" class="logo_img">
+            <div class="dashboard_options">
+
+
+                <a class="dashboard_option  active" href="previousclass.html">Previously completed Class</a>
+                <a class="dashboard_option  " href="upcomingclass.html">Upcoming Class</a>
+                <a class="dashboard_option" href="student_request.html">Student Request</a>
+
+            </div>
+        </section>
+        <section class="rightcontainer">
+            <section class="right_upper_dashboard">
+                <div class="right_upper_dashboard_bttn">
+                    <img src="app/images/Arrow.png" alt=" leftarrow" srcset="" onclick="previousbttn()">
+                    <img src="app/images/Arrow-1.png" alt="" srcset="" onclick="nextbttn()">
+                </div>
+                <div class="right_upper_dashboard_image">
+                    <img src="https://source.unsplash.com/weekly?water" alt="" srcset="">
+                    <div class="right_upper_dashboard_image_name">
+                        Student Name
+                        <div class="right_upper_dashboard_image_editproflie">
+                            <a href="#"> edit profile</a>
+                            <span class="bar">
+
+                            </span>
+                            <a href="#">log out</a>
+                        </div>
+                    </div>
+                    <div class="bell" onmouseover="hoveron()">
+                        <i class="fa fa-bell "></i>
+
+                    </div>
+                </div>
+
+
+
+            </section>
+            <div id="hoverDiv">
+                <div class="cross">
+                    <i class="fa fa-times" aria-hidden="true" id="cross" onclick="cross()"></i>
+                </div>
+                <div class="square"></div>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum vel eaque illum autem aut quo
+                similique minima cum laboriosam asperiores.
+                <div class="hr">
+                    1hr
+                    <hr>
+                </div>
+            
+            </div>
+
+            <section class="right-lowercontainer">
+
+                    <div class="right-lowercontainer_card">
+                        <div class="right-lowercontainer_card_image">
+                            <img src="https://source.unsplash.com/weekly?water" alt="">
+                            <div class="right-lowercontainer_card_image_content">
+                                <h1>Teacher Name</h1>
+                                <h5> <a onclick="popup1()">More Information</a> </h5>
+
+                            </div>
+                        </div>
+
+                        <div class="right-lowercontainer_card_contents">
+                            <div class="right-lowercontainer_card_content_main">
+                                <li class="color">subject</li>
+                                <li class="color">class</li>
+                                <li class="color">date</li>
+                                <li class="color">time</li>
+                                <li class="color">mode</li>
+                                <li class="color">status</li>
+                                <li class="color">payment</li>
+                            </div>
+                            <div class="right-lowercontainer_card_content_semicolon">
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                            </div>
+                            <div class="right-lowercontainer_card_content_info">
+                                <li class="margin">physics</li>
+                                <li class="margin">8th</li>
+                                <li class="margin">18-03-2021</li>
+                                <li class="margin">12:00pm</li>
+                                <li class="margin">online</li>
+                                <li class="margin">accepted</li>
+                                <li class="margin">confirm
+                                    <i class="fa fa-check-circle confirm" aria-hidden="true"></i>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-lowercontainer_card">
+                        <div class="right-lowercontainer_card_image">
+                            <img src="https://source.unsplash.com/weekly?water" alt="">
+                            <div class="right-lowercontainer_card_image_content">
+                                <h1>Teacher Name</h1>
+                                <h5> <a onclick="popup2()">More Information</a> </h5>
+
+                            </div>
+                        </div>
+
+                        <div class="right-lowercontainer_card_contents">
+                            <div class="right-lowercontainer_card_content_main">
+                                <li class="color">subject</li>
+                                <li class="color">class</li>
+                                <li class="color">date</li>
+                                <li class="color">time</li>
+                                <li class="color">mode</li>
+                                <li class="color">status</li>
+                                <li class="color">payment</li>
+                            </div>
+                            <div class="right-lowercontainer_card_content_semicolon">
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                            </div>
+                            <div class="right-lowercontainer_card_content_info">
+                                <li class="margin">physics</li>
+                                <li class="margin">8th</li>
+                                <li class="margin">18-03-2021</li>
+                                <li class="margin">12:00pm</li>
+                                <li class="margin">online</li>
+                                <li class="margin">accepted</li>
+                                <li class="margin">confirm
+                                    <i class="fa fa-check-circle confirm" aria-hidden="true"></i>
+                                </li>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="right-lowercontainer_card">
+                        <div class="right-lowercontainer_card_image">
+                            <img src="https://source.unsplash.com/weekly?water" alt="">
+                            <div class="right-lowercontainer_card_image_content">
+                                <h1>Teacher Name</h1>
+                                <h5> <a onclick="popup3()">More Information</a> </h5>
+
+                            </div>
+                        </div>
+
+                        <div class="right-lowercontainer_card_contents">
+                            <div class="right-lowercontainer_card_content_main">
+                                <li class="color">subject</li>
+                                <li class="color">class</li>
+                                <li class="color">date</li>
+                                <li class="color">time</li>
+                                <li class="color">mode</li>
+                                <li class="color">status</li>
+                                <li class="color">payment</li>
+                            </div>
+                            <div class="right-lowercontainer_card_content_semicolon">
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                            </div>
+                            <div class="right-lowercontainer_card_content_info">
+                                <li class="margin">physics</li>
+                                <li class="margin">8th</li>
+                                <li class="margin">18-03-2021</li>
+                                <li class="margin">12:00pm</li>
+                                <li class="margin">online</li>
+                                <li class="margin">accepted</li>
+                                <li class="margin">confirm
+                                    <i class="fa fa-check-circle confirm" aria-hidden="true"></i>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="right-lowercontainer_card">
+                        <div class="right-lowercontainer_card_image">
+                            <img src="https://source.unsplash.com/weekly?water" alt="">
+                            <div class="right-lowercontainer_card_image_content">
+                                <h1>Teacher Name</h1>
+                                <h5> <a onclick="popup4()">More Information</a> </h5>
+
+                            </div>
+                        </div>
+
+                        <div class="right-lowercontainer_card_contents">
+                            <div class="right-lowercontainer_card_content_main">
+                                <li class="color">subject</li>
+                                <li class="color">class</li>
+                                <li class="color">date</li>
+                                <li class="color">time</li>
+                                <li class="color">mode</li>
+                                <li class="color">status</li>
+                                <li class="color">payment</li>
+                            </div>
+                            <div class="right-lowercontainer_card_content_semicolon">
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                            </div>
+                            <div class="right-lowercontainer_card_content_info">
+                                <li class="margin">physics</li>
+                                <li class="margin">8th</li>
+                                <li class="margin">18-03-2021</li>
+                                <li class="margin">12:00pm</li>
+                                <li class="margin">online</li>
+                                <li class="margin">accepted</li>
+                                <li class="margin">confirm
+                                    <i class="fa fa-check-circle confirm" aria-hidden="true"></i>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-lowercontainer_card">
+                        <div class="right-lowercontainer_card_image">
+                            <img src="https://source.unsplash.com/weekly?water" alt="">
+                            <div class="right-lowercontainer_card_image_content">
+                                <h1>Teacher Name</h1>
+                                <h5> <a onclick="popup5()">More Information</a> </h5>
+
+                            </div>
+                        </div>
+
+                        <div class="right-lowercontainer_card_contents">
+                            <div class="right-lowercontainer_card_content_main">
+                                <li class="color">subject</li>
+                                <li class="color">class</li>
+                                <li class="color">date</li>
+                                <li class="color">time</li>
+                                <li class="color">mode</li>
+                                <li class="color">status</li>
+                                <li class="color">payment</li>
+                            </div>
+                            <div class="right-lowercontainer_card_content_semicolon">
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                            </div>
+                            <div class="right-lowercontainer_card_content_info">
+                                <li class="margin">physics</li>
+                                <li class="margin">8th</li>
+                                <li class="margin">18-03-2021</li>
+                                <li class="margin">12:00pm</li>
+                                <li class="margin">online</li>
+                                <li class="margin">accepted</li>
+                                <li class="margin">confirm
+                                    <i class="fa fa-check-circle confirm" aria-hidden="true"></i>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-lowercontainer_card">
+                        <div class="right-lowercontainer_card_image">
+                            <img src="https://source.unsplash.com/weekly?water" alt="">
+                            <div class="right-lowercontainer_card_image_content">
+                                <h1>Teacher Name</h1>
+                                <h5> <a onclick="popup6()">More Information</a> </h5>
+
+                            </div>
+                        </div>
+
+                        <div class="right-lowercontainer_card_contents">
+                            <div class="right-lowercontainer_card_content_main">
+                                <li class="color">subject</li>
+                                <li class="color">class</li>
+                                <li class="color">date</li>
+                                <li class="color">time</li>
+                                <li class="color">mode</li>
+                                <li class="color">status</li>
+                                <li class="color">payment</li>
+                            </div>
+                            <div class="right-lowercontainer_card_content_semicolon">
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                                <li class="margin">:</li>
+                            </div>
+                            <div class="right-lowercontainer_card_content_info">
+                                <li class="margin">physics</li>
+                                <li class="margin">8th</li>
+                                <li class="margin">18-03-2021</li>
+                                <li class="margin">12:00pm</li>
+                                <li class="margin">online</li>
+                                <li class="margin">accepted</li>
+                                <li class="margin">confirm
+                                    <i class="fa fa-check-circle confirm" aria-hidden="true"></i>
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+            </section>
+        </section>
+        <script>
+            let bell = document.querySelector(".bell")
+            let hover = document.getElementById("hoverDiv")
+            function hoveron() {
+                hover.style.display = "block"
+            }
+            function cross() {
+                hover.style.display = "none"
+             
+            }
+            let popup=document.getElementsByClassName("popup")
+            
+            
+            function popup1(){
+                popup[0].style.display="flex"
+                let outercontainer=document.querySelector(".outercontainer")
+                outercontainer.setAttribute("style","filter:blur(10px)")
+
+            }
+            function popup2(){
+                popup[1].style.display="flex"
+                let outercontainer=document.querySelector(".outercontainer")
+                outercontainer.setAttribute("style","filter:blur(10px)")
+
+            }
+            function popup3(){
+                popup[2].style.display="flex"
+                let outercontainer=document.querySelector(".outercontainer")
+                outercontainer.setAttribute("style","filter:blur(10px)")
+
+            }
+            function popup4(){
+                popup[3].style.display="flex"
+                let outercontainer=document.querySelector(".outercontainer")
+                outercontainer.setAttribute("style","filter:blur(10px)")
+
+            }
+            function popup5(){
+                popup[4].style.display="flex"
+                let outercontainer=document.querySelector(".outercontainer")
+                outercontainer.setAttribute("style","filter:blur(10px)")
+
+            }
+            function popup6(){
+                popup[5].style.display="flex"
+                let outercontainer=document.querySelector(".outercontainer")
+                outercontainer.setAttribute("style","filter:blur(10px)")
+
+            }
+            function cross2(){
+                for(let i=0;i<6;i++)
+                {
+                    popup[i].style.display="none"
+                }
+                let outercontainer=document.querySelector(".outercontainer")
+                outercontainer.setAttribute("style","filter:blur(0px)")
+            }
+        </script>
+</body>
+
+</html>

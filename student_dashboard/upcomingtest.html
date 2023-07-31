@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app/css/dashboard.css">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="app/js/dashboard.js"></script>
+    <style>
+  
+
+
+    </style>
+</head >
+<body>
+    <section class="outercontainer">
+        <section class="dashboard">
+            <img src="app/images/Logo.png" alt="logo" class="logo_img">
+            <div class="dashboard_options">
+
+
+            <a class="dashboard_option " href="dashboard_previousclasses.html">Previously Booked Class</a>
+            <a class="dashboard_option" href="dashboard_upcomingclasses.html">Upcoming Class</a>
+            <a class="dashboard_option " href="test.html">Test Series</a>
+            <a class="dashboard_option active" href="upcomingtest.html">Upcoming Test</a>
+ </div>
+        </section>
+        <section class="rightcontainer">
+            <section class="right_upper_dashboard">
+                <div class="right_upper_dashboard_bttn">
+                    <img src="app/images/Arrow.png" alt=" leftarrow" srcset="" onclick="previousbttn()">
+                    <img src="app/images/Arrow-1.png" alt="" srcset="" onclick="nextbttn()">
+                </div>
+                <div class="right_upper_dashboard_image">
+                    <img src="https://source.unsplash.com/weekly?water" alt="" srcset="">
+                    <div class="right_upper_dashboard_image_name">
+                        Student Name
+                        <div class="right_upper_dashboard_image_editproflie">
+                          <a href="#"> edit profile</a>  
+                            <span class="bar">
+
+                            </span>
+                            <a href="#">log out</a>
+                        </div>
+                    </div>
+                  <div class="bell" onmouseover="hoveron()", onmouseout="hoverof()">
+                    <i class="fa fa-bell "></i>
+
+                  </div>
+                </div>
+                
+                
+                
+            </section>
+            <div id="hoverDiv">
+                <div class="cross">
+                    <i class="fa fa-times" aria-hidden="true" id="cross" onclick="cross()"></i>
+                </div>
+                <div class="square"></div>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum vel eaque illum autem aut quo
+                similique minima cum laboriosam asperiores.
+                <div class="hr">
+                    1hr
+                    <hr>
+                </div>
+            
+            </div>
+            <section class="right-lowercontainer">
+            <div class="cards">
+
+                    <div class="card">
+                        <h1>Test Name</h1>
+                        <h4>subject: chemistry</h4>
+                        <h4>Date: 18-03-2021</h4>
+                        <h4>Time: 12:00pm</h4>
+                        <h4>Duration: 3hr</h4>
+                        <div class="card_bttn">
+                            <a href="#">  Book Test</a> 
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h1>Test Name</h1>
+                        <h4>subject: chemistry</h4>
+                        <h4>Date: 18-03-2021</h4>
+                        <h4>Time: 12:00pm</h4>
+                        <h4>Duration: 3hr</h4>
+                        <div class="card_bttn">
+                            <a href="#"> Book Test</a> 
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h1>Test Name</h1>
+                        <h4>subject: chemistry</h4>
+                        <h4>Date: 18-03-2021</h4>
+                        <h4>Time: 12:00pm</h4>
+                        <h4>Duration: 3hr</h4>
+                        <div class="card_bttn">
+                            <a href="#">  Book Test</a> 
+                        </div>
+                    </div>
+
+
+
+                    <div class="card">
+                        <h1>Test Name</h1>
+                        <h4>subject: chemistry</h4>
+                        <h4>Date: 18-03-2021</h4>
+                        <h4>Time: 12:00pm</h4>
+                        <h4>Duration: 3hr</h4>
+                        <div class="card_bttn">
+                            <a href="#"> Book Test</a> 
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h1>Test Name</h1>
+                        <h4>subject: chemistry</h4>
+                        <h4>Date: 18-03-2021</h4>
+                        <h4>Time: 12:00pm</h4>
+                        <h4>Duration: 3hr</h4>
+                        <div class="card_bttn">
+                            <a href="#"> Book Test</a> 
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h1>Test Name</h1>
+                        <h4>subject: chemistry</h4>
+                        <h4>Date: 18-03-2021</h4>
+                        <h4>Time: 12:00pm</h4>
+                        <h4>Duration: 3hr</h4>
+                        <div class="card_bttn">
+                         <a href="#"> Book Test</a> 
+                        </div>
+                    </div>
+
+
+            </div>
+
+            </section>
+        </section>
+    </section>
+   <script>
+      let bell=document.querySelector(".bell")
+let hover=document.getElementById("hoverDiv") 
+function hoveron(){
+ hover.style.display="block"
+}
+function cross() {
+                hover.style.display = "none"
+            } 
+   </script>
+</body>
+</html>

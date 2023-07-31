@@ -1,0 +1,458 @@
+.main{
+    display: flex;
+    /* border: 2px solid red; */
+    background-color: rgb(0, 140, 154);
+    justify-content: flex-end;
+
+}
+.main_content{
+    /* border: 2px solid red; */
+    width: 37%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 45px;
+    margin-right: 52px;
+ 
+}
+*{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.main_image{
+    /* border: 2px solid red; */
+    width: 50%;
+}
+.main_image img{
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+   
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+.apply{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    width: 85%;
+    margin: auto;
+    margin-top: 80px;
+}
+.apply_heading{
+    color: rgb(0, 106, 119);
+    font-size: 39px;
+    font-weight: bold;
+}
+.apply_posts{
+    margin-top: 91px;
+}
+.apply_post{
+    display: flex;
+    color: rgb(0, 140, 154);
+    font-size: 16px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.apply_post h1{
+    color: rgb(80, 140, 154);
+    font-size: 25px;
+}
+.apply_post_bttn{
+    background-color: rgb(0, 155, 168);
+    color: white;
+    border-radius: 30px;
+    padding: 10px 20px;
+   box-shadow:  2px 5px 8px rgb(226, 226, 226);
+   font-size: 20px;
+   transition: all 0.5s;
+}
+.apply_post_bttn:hover{
+    background-color: rgb(0, 106, 119);
+    transform: scale(1.1,1.1);
+}
+hr{
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+   background-color:  rgb(181, 181, 181);
+}
+.testemonial{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    width: 95%;
+    margin: auto;
+}
+.testemonial_heading{
+    font-size: 31px;
+    color: rgb(0, 106, 119);
+    padding-left: 68px;
+}
+.testemonial_bttn{
+    font-size: 30px;
+/* background-color: white; */
+color: rgb(0, 155, 168);
+/* border: 2px solid red; */
+
+}
+.testemonial_slider{
+    display: flex;
+    /* border: 2px solid red; */
+    align-items: center;
+    margin-top: 70px;
+    min-width: 80%;
+}
+.tesemonial_image img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+
+
+}
+.tesemonial_image{
+    /* border: 2px solid red; */
+    margin-left: 30px;
+    display: flex;
+
+}
+.bluecircle{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(0, 154, 167);
+    border-radius: 50%;
+    position: relative;
+    left: -165px;
+    z-index: -1;
+    top: -10px;
+    display: none;
+}
+#prev{
+    visibility: hidden;
+    cursor: pointer;
+}
+#next{
+    cursor: pointer;
+}
+
+.whitecircle{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(235, 254, 255);
+    border-radius: 50%;
+    position: relative;
+    display: none;
+
+    /* left: -20px; */
+    z-index: -1;
+    right: -48px;
+}
+.testemonial_content{
+    display: flex;
+/* border: 2px solid red; */
+min-width: 100%;
+transition: all 1s;
+}
+.testemonial_para{
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 20px;
+
+}
+.testemonial_content_content{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+.testemonial_info{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+    width: 90%;
+    align-items: center;
+}
+.rating{
+    font-size: 25px;
+    margin-right: 10px;
+
+}
+.testemonial_name h1{
+    color: rgb(0, 106, 119);
+    font-weight: bold;
+    font-size: 35px;
+}
+.testemonial_contents{
+    display: flex;
+    overflow: hidden;
+
+}
+.slider_bars{
+    width: 40%;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+
+    justify-content: center;
+}
+.sliderbar{
+    width: 25px;
+    height: 5px;
+    background-color: grey;
+    margin-left: 2px;
+    border-radius: 14px;
+}
+.lower_image{
+    width: 50%;
+    /* border: 2px solid red; */
+    display: block;
+    margin: auto;
+    margin-top: 100px;
+}
+.lower_image img{
+    width: 100%;
+
+}
+@media only screen and (max-width:1110px)
+{
+    .main_content{
+        font-size: 40px;
+    }
+    .testemonial_para {
+        font-size: 24px;}
+}
+@media only screen and (max-width:990px)
+{
+    .main_content{
+        font-size: 35px;
+    }
+    .apply_heading {
+        font-size: 30px;
+    }
+    .testemonial_para {
+        font-size: 22px;}
+}
+@media only screen and (max-width:949px){
+.testemonial_name h1{
+font-size: 28px;
+}
+.rating {
+    font-size: 10px;
+    margin-right: 10px;
+}
+.testemonial_para {
+    font-size: 19px;
+}
+}
+@media only screen and (max-width:863px)
+{
+    .main_content{
+        font-size: 29px;
+    }
+    .apply_heading {
+        font-size: 25px;
+    }
+    .rating{
+        margin-right: -36px;
+    }
+    .testemonial_heading {
+        font-size: 26px;}
+}
+@media only screen and (max-width:790px){
+    .tesemonial_image img {
+        width: 121px;
+        height: 126px;}
+        .testemonial_bttn img{
+          
+                width: 89px;
+            
+        }
+        .tesemonial_image{
+            margin-left: 0px;
+        }
+
+}
+@media only screen and (max-width:760px)
+{
+    .main_content{
+        font-size: 25px;
+    }
+    .apply_post h1 {
+        color: rgb(80, 140, 154);
+        font-size: 23px;
+    }
+    .apply_post_bttn {
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width:722px)
+{
+    .main_content{
+
+        width: 47%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 29px;
+        margin-right: 0px;
+    }
+    .rating{
+        font-size: 0px;
+    }
+    .testemonial_name h1 {
+        font-size: 22px;
+    }
+    .testemonial{
+        width: 100%;
+    }
+.testemonial_content_content{
+    padding: 10px;
+}
+.testemonial_para {
+    font-size: 16px;
+}
+.lower_image{
+    width: 60%;
+}
+    
+}
+@media only screen and (max-width:640px){
+    .main_content{
+        font-size: 24px;
+    }
+    .apply{
+        width: 94%;
+    }
+    .tesemonial_image img {
+        width: 94px;
+        height: 94px;
+        margin-top: 30px;
+    }
+    .testemonial_bttn img {
+        width: 75px;
+    }
+    .testemonial_para {
+        font-size: 14px;
+    }    
+}
+@media only screen and (max-width:570px){
+    .apply_heading {
+        font-size: 22px;
+    }
+    .apply_post h1 {
+        color: rgb(80, 140, 154);
+        font-size: 21px;
+    }
+}
+@media only screen and (max-width:550px){
+    .main_content{
+        font-size: 22px;
+        width: 49%;
+    }
+    .testemonial_info{
+        flex-direction: column;
+    }
+    .rating {
+        margin-right: 0px;
+    }
+    .testemonial_para {
+        font-size: 12px;
+    }
+    .lower_image{
+        width: 70%;
+    }
+}
+@media only screen and (max-width:505px){
+    .apply_heading {
+        font-size: 16px;
+    }
+    .apply_post_bttn {
+        font-size: 14px;
+    }
+    .apply_posts {
+        margin-top: 52px;
+    }
+    .apply_post h1 {
+        color: rgb(80, 140, 154);
+        font-size: 19px;
+    }
+    
+    
+}
+@media only screen and (max-width:470px){
+    .testemonial_heading {
+        font-size: 23px;
+        padding-left: 40px;
+    }
+    .testemonial_slider{
+        margin-top: 28px;
+    }
+    .testemonial_bttn{
+        display: none;
+    }
+    .testemonial_contents{
+        overflow: scroll;
+    }
+    .testemonial_contents::-webkit-scrollbar{
+        display: none;
+    }
+    .sliderbar{
+        display: none;
+    }
+    .testemonial_para {
+        font-size: 17px;
+    }
+}
+@media only screen and (max-width:427px){
+    .main_content{
+        font-size: 18px;
+        width: 49%;
+    }
+    .apply_heading {
+        font-size: 15px;
+    }
+    .apply_post h1 {
+        color: rgb(80, 140, 154);
+        font-size: 17px;
+    }
+    .lower_image{
+        width: 80%;
+    }
+}
+@media only screen and (max-width:386px){
+    .testemonial_heading {
+        font-size: 20px;
+        padding-left: 10px;
+    }
+    .lower_image{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width:346px){
+    .main_content{
+        font-size: 16px;
+        width: 49%;
+    }
+    .apply_heading {
+        font-size: 13px;
+    }
+    .apply_post h1 {
+        color: rgb(80, 140, 154);
+        font-size: 15px;
+    }
+    .apply_post_bttn {
+        font-size: 12px;
+    }
+    .lower_image{
+        width: 100%;
+    }
+}
